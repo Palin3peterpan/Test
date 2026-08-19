@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Internal CSS -->
+    <style>
+        nav {
+            color: blanchedalmond;
+            background-color: white;
+            border-radius: 200px
+        }
+
+        .textc1 {
+            color: #01204c;
+            font-weight: 700;
+        }
+
+        .bgc1 {
+            background-color: #01204c;
+        }
+
+        #profileimg {
+            background-image: url(/public/img/profile.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: white 2px solid;
+            height: 10rem;
+            width: 10rem;
+        }
+
+        .table1 {
+            background-color: #2F415C;
+            padding: 0 0 2rem 0;
+            border-radius: 3rem;
+        }
+
+        tr {
+            height: 3rem;
+            font-size: 20px;
+        }
+        .text-bg-primary{
+            display: inline;
+        }
+    </style>
+</head>
+
+<body class="bgc1">
+    <nav class="m-5 p-2">
+        <div class="row px-4">
+            <div class="col-3 h2 textc1">
+                REQUEST STATUS
+            </div>
+            <div class="col text-end h4 pt-2">
+                <a href="#" class="textc1">ASSET LIST</a>
+                <a href="#" class="ms-3 textc1">HISTORY</a>
+                <a href="#" class="text-danger ms-3 textc1">LOG OUT</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-1"></div>
+
+        <div class="col-10 table1">
+            <h1 class="text-white text-center my-2">REQUEST STATUS</h1>
+            <table class="table table-striped text-center">
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>Model</th>                      
+                        <th>Approver</th>
+                        <th>Date/return Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                    <tr>
+                        <td>1</td>
+                        <td>Wave 110 i</td>
+                        <td>Noah</td>                        
+                        <td>23/03/2567 - 25/03/2567</td>
+                        <td>
+                            <div class="text-bg-success rounded-pill badge">Approver</div>                           
+                            <a href="#" class="text-bg-primary rounded-pill badge  ">Payment</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Honda pcx 160 black</td>                       
+                        <td>Oliver</td>
+                        <td>27/03/2567 - 28/03/2567</td>
+                        <td>
+                            <div class="text-bg-danger rounded-pill badge">Not Approval</div>
+                            <a href="#" class="text-bg-primary rounded-pill badge  ">Payment</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Vespa Sprint S 150 i-Get ABS</td>
+                        <td>-</td>                        
+                        <td>10/04/2567 - 18/04/2567</td>
+                        <td>
+                            <div class="bg-warning text-white rounded-pill badge">Waiting</div>
+                            <a href="#" class="text-bg-primary rounded-pill badge  ">Payment</a>
+                        </td>
+                    </tr>                   
+                </tbody>
+            </table>
+            
+        </div>
+        <div class="col-1"></div>
+    </div>
+</body>
+
+</html>
